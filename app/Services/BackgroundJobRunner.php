@@ -85,10 +85,8 @@ class BackgroundJobRunner
      */
     private function isValidClass(string $className): bool
     {
-        $validClasses = ['App\\Jobs\\SomeClass', 'App\\Jobs\\AnotherClass'];
-        return in_array($className, $validClasses);
+        return class_exists($className);
     }
-
     /**
      * Check if the method exists in the given class.
      *

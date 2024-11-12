@@ -1,4 +1,7 @@
 <?php
+
+namespace App\Helpers;
+
 use App\Services\BackgroundJobRunner;
 
 if (!function_exists('runBackgroundJob')) {
