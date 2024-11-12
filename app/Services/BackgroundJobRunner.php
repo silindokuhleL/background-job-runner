@@ -73,7 +73,7 @@ class BackgroundJobRunner
         if (PHP_OS === 'WINNT') {
             exec("start /B $command");
         } else {
-            exec($command . " &");
+            exec($command);
         }
     }
 
